@@ -1,18 +1,35 @@
-# Slim Framework 3 Skeleton Application
+# Slim Framework 3 Starter Application
+This is a starter slim application based on Slim 3.
 
-Use this skeleton application to quickly setup and start working on a new Slim Framework 3 application. This application uses the latest Slim 3 with the PHP-View template renderer. It also uses the Monolog logger.
+# Git Repository
+Please remove the git repository and initialize your own repository.
+ ```
+$ rm -rf .git
+$ git init
+$ git add --all
+$ git commit -m "first commit"
+$ git add remote origin [your-remote-url]
+$ git push -u origin master
 
-This skeleton application was built for Composer. This makes setting up a new Slim Framework application quick and easy.
+```
+You can also remove the origin and add yours
+```
+$ git remote rm origin
+$ git add remote origin [your-remote-url]
 
-## Install the Application
+```
+You can also just change the remote url with
+```
+$ git remote set-url origin [your-remote-url]
 
-Run this command from the directory in which you want to install your new Slim Framework application.
+```
+# Installation
+```
+$ composer install
 
-    php composer.phar create-project slim/slim-skeleton [my-app-name]
+```
+# Suggested Libraries 
+```
+$ composer require nesbot/carbon
 
-Replace `[my-app-name]` with the desired directory name for your new application. You'll want to:
-
-* Point your virtual host document root to your new application's `public/` directory.
-* Ensure `logs/` is web writeable.
-
-That's it! Now go build something cool.
+```
